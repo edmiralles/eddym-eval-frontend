@@ -2,10 +2,17 @@ main {
     aside {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1rem;
     }
 
     article {
         display: flex;
+        figure{
+        margin-right: 3vw;
+        }
+        section h2, section p, section em{
+            margin-bottom: 1vh;
+        }
     }
     
     section{

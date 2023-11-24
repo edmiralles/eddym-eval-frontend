@@ -1,3 +1,24 @@
+.gabarit {
+  width: 61.5%;
+  margin: auto;
+}
+
+.none {
+  display: none;
+}
+
+.green-button {
+  background: linear-gradient(#4e984f, #59b459);
+}
+
+header > div aside form div:nth-child(2) button {
+  background: linear-gradient(rgba(78, 152, 79, 0.6), rgba(89, 180, 89, 0.6));
+}
+
+.padding {
+  padding-bottom: 1rem;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -19,20 +40,47 @@ header > div section {
 }
 header > div h1 {
   color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 1vh;
 }
 header > div p {
   color: #fff;
 }
 header > div nav i {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1vh;
+  right: 2vw;
+  padding: 1px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #616770;
 }
 header > div aside {
   margin-top: auto;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  width: 65vw;
 }
-header > div aside button button {
-  width: 25%;
-  height: 3vh;
+header > div aside div {
+  padding: 5px;
+}
+header > div aside form {
+  display: flex;
+}
+header > div aside form div:first-of-type {
+  width: 80%;
+  background: rgba(200, 200, 200, 0.6);
+}
+header > div aside form div:first-of-type select, header > div aside form div:first-of-type input {
+  width: 28.33%;
+  padding: 0.4rem 0 0.4rem 1rem;
+}
+header > div aside form div:nth-child(2) {
+  width: 20%;
+  padding: 5px;
+}
+header > div aside form div:nth-child(2) button {
+  width: 100%;
+  color: white;
+  height: 100%;
 }/*# sourceMappingURL=header.css.map */

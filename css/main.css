@@ -1,9 +1,16 @@
 main aside {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 main article {
   display: flex;
+}
+main article figure {
+  margin-right: 3vw;
+}
+main article section h2, main article section p, main article section em {
+  margin-bottom: 1vh;
 }
 main section {
   display: flex;

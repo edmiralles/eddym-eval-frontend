@@ -1,0 +1,12 @@
+footer hr {
+  color: 200, 200, 200, 0.6;
+  margin-bottom: 2vh;
+}
+footer div:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+footer div:first-of-type img {
+  max-width: 100px;
+  margin-right: 3vw;
+}/*# sourceMappingURL=footer.css.map */
