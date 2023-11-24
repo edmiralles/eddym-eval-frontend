@@ -157,3 +157,47 @@ const carsLocation = [
     },
 
 ]
+
+function createArticleElement(car) {
+    const article = document.createElement('article');
+    article.innerHTML = `
+        <figure>
+            <img src="../assets/${car.image}" alt="${car.model}">
+        </figure>
+        <section>
+            <h2>${car.model}</h2>
+            <p>${car.description}</p>
+            <em>${car.price} € - Agence de ${car.agence}</em>
+            <button class="green-button">Réserver et Payer</button>
+        </section>
+    `;
+    return article;
+}
+
+function addArticlesToPage() {
+    const articlesContainer = document.getElementById('articles-container');
+    carsLocation.slice(0, 4).forEach(car => {
+        const articleElement = createArticleElement(car);
+        articlesContainer.appendChild(articleElement);
+    });
+}
+
+ function loadMoreArticles(startIndex, quantity) {
+    const cars = carsLocation.slice(startIndex, startIndex + quantity);
+    return cars.map(createArticleElement);
+}
+
+ function loadMore(startIndex, articlesPerPage) {
+    const newArticles = loadMoreArticles(startIndex, articlesPerPage);
+    return newArticles;
+}
+
+function eventScroll(window, document, startIndex, articlesPerPage) {
+    return function () {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            return true;
+        }
+        return false;
+    }
+}
+export{createArticleElement, addArticlesToPage, loadMoreArticles, loadMore, eventScroll, carsLocation}

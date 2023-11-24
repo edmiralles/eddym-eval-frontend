@@ -9,6 +9,8 @@
 
 .green-button {
   background: linear-gradient(#4e984f, #59b459);
+  color: #fff;
+  border-style: none;
 }
 
 header > div aside form div:nth-child(2) button {
@@ -92,6 +94,7 @@ main aside {
 }
 main article {
   display: flex;
+  margin-bottom: 4vh;
 }
 main article figure {
   margin-right: 3vw;
