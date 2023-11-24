@@ -203,7 +203,7 @@ function eventScroll(window, document, startIndex, articlesPerPage) {
         return false;
     }
 }
-
+/*
 function setupSlider(articlesContainer, startIndex, carsLocation) {
     articlesContainer.addEventListener('click', (e) => {
         const target = e.target;
@@ -242,6 +242,6 @@ function changeImage(articlesContainer, car, index) {
         thumbnailsContainer.appendChild(thumbnailImg);
     });
 }
-
-export { createArticleElement, addArticlesToPage, loadMoreArticles, loadMore, eventScroll, carsLocation, changeImage, setupSlider }
+*/
+export { createArticleElement, addArticlesToPage, loadMoreArticles, loadMore, eventScroll, carsLocation/*, changeImage, setupSlider*/ }
 
