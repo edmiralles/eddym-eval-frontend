@@ -73,7 +73,8 @@ header > div aside form div:first-of-type {
   width: 80%;
   background: rgba(200, 200, 200, 0.6);
 }
-header > div aside form div:first-of-type select, header > div aside form div:first-of-type input {
+header > div aside form div:first-of-type select,
+header > div aside form div:first-of-type input {
   width: 28.33%;
   padding: 0.4rem 0 0.4rem 1rem;
 }
@@ -83,7 +84,7 @@ header > div aside form div:nth-child(2) {
 }
 header > div aside form div:nth-child(2) button {
   width: 100%;
-  color: white;
+  color: #fff;
   height: 100%;
 }
 
@@ -98,8 +99,15 @@ main article {
 }
 main article figure {
   margin-right: 3vw;
+  display: flex;
+  align-items: center;
 }
-main article section h2, main article section p, main article section em {
+main article i {
+  cursor: pointer;
+}
+main article section h2,
+main article section p,
+main article section em {
   margin-bottom: 1vh;
 }
 main section {
@@ -123,6 +131,9 @@ footer div:first-of-type {
 footer div:first-of-type img {
   max-width: 100px;
   margin-right: 3vw;
+}
+footer div:first-of-type li {
+  margin-bottom: 3px;
 }
 
 * {

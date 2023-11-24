@@ -29,65 +29,54 @@
             </nav>
             <aside>
                 <div>
-                <form>
-                    <div>
-                    <label for="addressPicker" name="Adresse de départ"></label>
-                    <select id="addressPicker">
-                        <option>Adresse de départ</option>
-                        <option value="Grenoble">Grenoble</option>
-                        <option value="Paris">Paris</option>
-                        <option value="Lyon">Lyon</option>
-                    </select>
-                    <label for="startDatePicker" placeholder="Début de location"></label>
-                    <input type="date" id="startDatePicker">
-                    <label for="endDatePicker" placeholder="Fin de location"></label>
-                    <input type="date" id="endDatePicker">
+                    <form>
+                        <div>
+                            <label for="addressPicker" name="Adresse de départ"></label>
+                            <select id="addressPicker">
+                                <option>Adresse de départ</option>
+                                <option value="Grenoble">Grenoble</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Lyon">Lyon</option>
+                            </select>
+                            <label for="startDatePicker" placeholder="Début de location"></label>
+                            <input type="date" id="startDatePicker">
+                            <label for="endDatePicker" placeholder="Fin de location"></label>
+                            <input type="date" id="endDatePicker">
+                        </div>
+                        <div>
+                            <button type="submit">Valider ma recherche</button>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <button type="submit">Valider ma recherche</button>
-                </div>
-                </form>
-            </div>
             </aside>
         </div>
         <img src="../assets/background.jpg" alt="Voiture grise header">
     </header>
     <main class="gabarit padding">
         <aside>
-            <p><span>7</span> résultas</p>
+            <p><span id="resultCount"> 7</span> résultats</p>
             <button>prix</button>
         </aside>
         <div id="articles-container"></div>
-        <!--<article>
-            <figure>
-                <img src="../assets/vehicule1.png" alt="Voiture peugeot 208">
-            </figure>
-            <section>
-                <h2>Peugeot 208</h2>
-                <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0.5km supplémentaire).</p>
-                <em>999 € - Agence de Paris</em>
-                <button class="green-button">Réserver et Payer</button>
-            </section>
-        </article> -->
     </main>
     <footer class="gabarit padding">
         <hr>
         <div>
-        <img src="../assets/agence.jpg" alt="agence de paris">
-        <ul>
-            <li>Notre Agence de <strong>Paris</strong></li>
-            <li>
-                <adress>300 boulevard de vaugiard, 75015, Paris</adress>
-            </li>
-            <li>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</li>
-            <li>
-                <adress><a href="tel +330149782133">01 49 78 21 33</a></adress>
-            </li>
-            <li>
-                <address><a href="mailto:contact@vtc.com">contact@vtc.com</a></address>
-            </li>
-        </ul>
-    </div>
+            <img src="../assets/agence.jpg" alt="agence de paris">
+            <ul>
+                <li>Notre Agence de <strong>Paris</strong></li>
+                <li>
+                    <adress>300 boulevard de vaugiard, 75015, Paris</adress>
+                </li>
+                <li>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</li>
+                <li>
+                    <adress><a href="tel +330149782133">01 49 78 21 33</a></adress>
+                </li>
+                <li>
+                    <address><a href="mailto:contact@vtc.com">contact@vtc.com</a></address>
+                </li>
+            </ul>
+        </div>
     </footer>
     <script src="script/index.js" type="module"></script>
 </body>

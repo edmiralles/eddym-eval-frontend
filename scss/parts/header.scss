@@ -48,9 +48,11 @@ header {
             margin-top: auto;
             margin-bottom: 3%;
             width: 65vw;
-            div{
-                padding:5px;
+
+            div {
+                padding: 5px;
             }
+
             form {
                 display: flex;
 
@@ -58,24 +60,25 @@ header {
                     width: 80%;
                     background: rgba(200, 200, 200, 0.6);
 
-                    select, input {
+                    select,
+                    input {
                         width: 28.33%;
                         padding: 0.4rem 0 0.4rem 1rem;
+                    }
                 }
-            }
 
-                    div:nth-child(2) {
-                        width: 20%;
-                        padding: 5px;
+                div:nth-child(2) {
+                    width: 20%;
+                    padding: 5px;
 
-                        button {
-                            width: 100%;
-                            color: white;
-                            height: 100%;
-                            @extend %green-button-header;
-                        }
+                    button {
+                        width: 100%;
+                        color: v.$main-color;
+                        height: 100%;
+                        @extend %green-button-header;
                     }
                 }
             }
         }
     }
+}

@@ -9,6 +9,8 @@
 
 .green-button {
   background: linear-gradient(#4e984f, #59b459);
+  color: #fff;
+  border-style: none;
 }
 
 header > div aside form div:nth-child(2) button {
@@ -71,7 +73,8 @@ header > div aside form div:first-of-type {
   width: 80%;
   background: rgba(200, 200, 200, 0.6);
 }
-header > div aside form div:first-of-type select, header > div aside form div:first-of-type input {
+header > div aside form div:first-of-type select,
+header > div aside form div:first-of-type input {
   width: 28.33%;
   padding: 0.4rem 0 0.4rem 1rem;
 }
@@ -81,6 +84,6 @@ header > div aside form div:nth-child(2) {
 }
 header > div aside form div:nth-child(2) button {
   width: 100%;
-  color: white;
+  color: #fff;
   height: 100%;
 }/*# sourceMappingURL=header.css.map */

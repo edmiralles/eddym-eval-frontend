@@ -1,14 +1,20 @@
-footer{
-    hr{
+footer {
+    hr {
         color: (200, 200, 200, 0.6);
         margin-bottom: 2vh;
     }
-    div:first-of-type{
+
+    div:first-of-type {
         display: flex;
         justify-content: center;
-        img{
+
+        img {
             max-width: 100px;
             margin-right: 3vw;
+        }
+
+        li {
+            margin-bottom: 3px;
         }
     }
 }

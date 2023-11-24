@@ -9,4 +9,7 @@ footer div:first-of-type {
 footer div:first-of-type img {
   max-width: 100px;
   margin-right: 3vw;
+}
+footer div:first-of-type li {
+  margin-bottom: 3px;
 }/*# sourceMappingURL=footer.css.map */

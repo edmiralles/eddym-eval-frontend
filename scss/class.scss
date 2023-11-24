@@ -4,17 +4,21 @@
     width: 61.5%;
     margin: auto;
 }
-.none{
+
+.none {
     display: none;
 }
-.green-button{
+
+.green-button {
     background: linear-gradient(v.$button-color-primary, v.$button-color-secondary);
-    color:v.$main-color;
+    color: v.$main-color;
     border-style: none;
 }
-%green-button-header{
+
+%green-button-header {
     background: linear-gradient(rgba(78, 152, 79, 0.6), rgba(89, 180, 89, 0.6));
 }
-.padding{
-    padding-bottom:1rem;
+
+.padding {
+    padding-bottom: 1rem;
 }

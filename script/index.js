@@ -1,4 +1,5 @@
-import {createArticleElement, addArticlesToPage, loadMoreArticles, loadMore, eventScroll, carsLocation} from './modules/slider.js';
+import { createArticleElement, addArticlesToPage, loadMoreArticles, loadMore, eventScroll, carsLocation, changeImage, setupSlider } from './modules/slider.js';
+
 const articlesContainer = document.getElementById('articles-container');
 const articlesPerPage = 4;
 let startIndex = articlesPerPage;
@@ -7,13 +8,22 @@ const scrolledToBottom = eventScroll(window, document, startIndex, articlesPerPa
 
 window.onload = () => {
     addArticlesToPage();
+    setupCarousel(articlesContainer, startIndex, carsLocation);
     window.addEventListener('scroll', () => {
         if (scrolledToBottom()) {
             const newArticles = loadMore(startIndex, articlesPerPage);
             newArticles.forEach(article => {
                 articlesContainer.appendChild(article);
+                changeImageAndThumbnails(articlesContainer, carsLocation[startIndex + index], startIndex + index);
             });
             startIndex += articlesPerPage;
         }
     });
 };
+
+setupSlider(e)
+changeImage(e)
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('resultCount').textContent = carsLocation.length;
+});

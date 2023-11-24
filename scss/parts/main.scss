@@ -8,21 +8,32 @@ main {
     article {
         display: flex;
         margin-bottom: 4vh;
-        figure{
-        margin-right: 3vw;
+
+        figure {
+            margin-right: 3vw;
+            display: flex;
+            align-items: center;
         }
-        section h2, section p, section em{
+
+        i {
+            cursor: pointer;
+        }
+
+        section h2,
+        section p,
+        section em {
             margin-bottom: 1vh;
         }
     }
-    
-    section{
+
+    section {
         display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    button{
-        width:25%;
-        height: 3vh;
-    }
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        button {
+            width: 25%;
+            height: 3vh;
+        }
     }
 }
