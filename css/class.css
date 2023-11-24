@@ -1,0 +1,12 @@
+.gabarit {
+  width: 61.5%;
+  margin: auto;
+}
+
+.none {
+  display: none;
+}
+
+.green-button {
+  background: linear-gradient(#4e984f, #59b459);
+}/*# sourceMappingURL=class.css.map */

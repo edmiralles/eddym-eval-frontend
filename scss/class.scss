@@ -1,0 +1,12 @@
+@use'var' as v;
+
+.gabarit {
+    width: 61.5%;
+    margin: auto;
+}
+.none{
+    display: none;
+}
+.green-button{
+    background: linear-gradient(v.$button-color-primary, v.$button-color-secondary);;
+}

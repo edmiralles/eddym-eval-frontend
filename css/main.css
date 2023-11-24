@@ -1,0 +1,16 @@
+main aside {
+  display: flex;
+  justify-content: space-between;
+}
+main article {
+  display: flex;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+main section button {
+  width: 25%;
+  height: 3vh;
+}/*# sourceMappingURL=main.css.map */

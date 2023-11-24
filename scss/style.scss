@@ -1,0 +1,16 @@
+@use'class' as c;
+@use'var' as v;
+@use "parts/header";
+@use "parts/main";
+@use "parts/footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

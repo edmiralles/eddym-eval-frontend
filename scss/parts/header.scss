@@ -1,0 +1,50 @@
+@use'../var.scss' as v;
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &>div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        section {
+            margin-bottom: auto;
+            margin-top: 2%;
+        }
+
+        h1 {
+            color: v.$main-color;
+        }
+
+        p {
+            color: v.$main-color;
+        }
+
+        nav {
+            i {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        aside {
+            margin-top: auto;
+            margin-bottom: 5%;
+            button{
+                button{
+                    width:25%;
+                    height: 3vh;
+                }
+            }
+        }
+    }
+}
